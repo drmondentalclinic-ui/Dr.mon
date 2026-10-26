@@ -9,7 +9,7 @@
   <style>
     :root { --navy:#514477; --blue:#7b9fe8; --sky:#eaf3ff; --pink:#f8dff0; --purple:#eee5ff; --ink:#443b5b; --muted:#786f8e; --white:#fff; --line:#e7dff3; --accent-pink:#e8a8d0; --accent-purple:#a99be8; }
     * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
+    html { scroll-behavior:smooth; scroll-padding-top:92px; }
     body { margin:0; font-family:Tahoma,"Noto Sans Thai",Arial,sans-serif; color:var(--ink); background:#fcfaff; line-height:1.7; }
     a { color:inherit; }
     .wrap { width:min(1120px,92%); margin:auto; }
@@ -33,7 +33,7 @@
     .hero-art { min-height:340px; display:grid; place-items:center; border-radius:32px; background:linear-gradient(135deg,#dceeff,#f8e2f2,#eee5ff); padding:18px; }
     .hero-art img { width:100%; max-height:400px; object-fit:cover; border-radius:22px; }
     .photo-note { font-size:12px; color:var(--muted); margin-top:10px; text-align:center; }
-    section { padding:64px 0; }
+    section { padding:64px 0; scroll-margin-top:88px; }
     .section-head { max-width:680px; margin:0 auto 30px; text-align:center; }
     .section-head p { color:var(--muted); margin:8px 0 0; }
     .services { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
@@ -57,7 +57,7 @@
     footer { background:linear-gradient(110deg,#5a4c83,#7e8fd0,#c48bb8); color:#fff; padding:28px 0; font-size:14px; }
     footer .foot { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
     .small { font-size:12px; color:var(--muted); }
-    @media(max-width:800px) { nav { display:none; } .hero-grid,.about-grid,.contact-grid { grid-template-columns:1fr; } .hero { padding-top:38px; } .hero-art { min-height:230px; } .services { grid-template-columns:repeat(2,1fr); } .gallery { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:900px) { .nav { align-items:flex-start; flex-direction:column; padding:12px 0; gap:8px; } nav { width:100%; justify-content:flex-start; gap:14px; } .hero-grid { grid-template-columns:1fr 1fr; gap:24px; } .services { grid-template-columns:repeat(2,1fr); } .about-grid { gap:24px; } }\n    @media(max-width:640px) { .hero-grid,.about-grid,.contact-grid { grid-template-columns:1fr; } .hero { padding-top:34px; } .hero-art { min-height:220px; } .gallery { grid-template-columns:repeat(2,minmax(0,1fr)); } .gallery img { height:180px; } .brand { font-size:15px; } nav { overflow-x:auto; flex-wrap:nowrap; padding-bottom:4px; } nav a { flex:0 0 auto; } section { padding:46px 0; } }\n    @media(max-width:420px) { .services,.gallery { grid-template-columns:1fr; } .gallery img { height:230px; } .actions .btn { width:100%; } .prices th,.prices td { padding:11px 10px; font-size:14px; } }
     @media(max-width:440px) { .services,.gallery { grid-template-columns:1fr; } .gallery img { height:240px; } .actions .btn { width:100%; } section { padding:46px 0; } }
   </style>
 </head>
