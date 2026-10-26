@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="คลินิกหมอมณทันตกรรม อำเภอละงู จังหวัดสตูล ให้บริการทันตกรรมทั่วไปและดูแลสุขภาพช่องปาก">
+  <meta name="theme-color" content="#1267a5">
+  <title>คลินิกหมอมณทันตกรรม | Dr.Mon Dental Clinic</title>
+  <style>
+    :root { --navy:#123b63; --blue:#1678b9; --sky:#e9f6ff; --ink:#18344b; --muted:#60778b; --white:#fff; --line:#d8e8f2; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Tahoma,"Noto Sans Thai",Arial,sans-serif; color:var(--ink); background:#f7fbfe; line-height:1.7; }
+    a { color:inherit; }
+    .wrap { width:min(1120px,92%); margin:auto; }
+    header { background:rgba(255,255,255,.97); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:5; }
+    .nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; color:var(--navy); text-decoration:none; }
+    .logo { width:44px; height:44px; border-radius:14px; background:var(--blue); color:white; display:grid; place-items:center; font-size:25px; }
+    .brand small { display:block; font-size:12px; color:var(--muted); font-weight:600; }
+    nav { display:flex; gap:20px; flex-wrap:wrap; font-size:14px; }
+    nav a { text-decoration:none; color:var(--navy); }
+    .hero { padding:58px 0 54px; background:linear-gradient(120deg,#eaf7ff 0%,#fff 70%); overflow:hidden; }
+    .hero-grid { display:grid; grid-template-columns:1.08fr .92fr; gap:42px; align-items:center; }
+    .eyebrow { color:var(--blue); font-weight:800; letter-spacing:.03em; }
+    h1 { color:var(--navy); font-size:clamp(34px,5vw,56px); line-height:1.2; margin:12px 0 16px; }
+    h2 { color:var(--navy); font-size:clamp(26px,3vw,36px); line-height:1.3; margin:0 0 12px; }
+    .lead { color:var(--muted); font-size:18px; max-width:570px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:26px; }
+    .btn { display:inline-flex; justify-content:center; align-items:center; padding:12px 19px; border-radius:999px; text-decoration:none; font-weight:800; border:1px solid var(--blue); background:var(--blue); color:white; transition:transform .15s; }
+    .btn:hover { transform:translateY(-2px); }
+    .btn.secondary { color:var(--blue); background:white; }
+    .hero-art { min-height:340px; display:grid; place-items:center; border-radius:32px; background:#dff2ff; padding:18px; }
+    .hero-art img { width:100%; max-height:400px; object-fit:cover; border-radius:22px; }
+    .photo-note { font-size:12px; color:var(--muted); margin-top:10px; text-align:center; }
+    section { padding:64px 0; }
+    .section-head { max-width:680px; margin:0 auto 30px; text-align:center; }
+    .section-head p { color:var(--muted); margin:8px 0 0; }
+    .services { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .service { background:white; border:1px solid var(--line); border-radius:18px; padding:22px 18px; box-shadow:0 6px 20px rgba(18,59,99,.04); }
+    .service .ico { width:45px; height:45px; border-radius:14px; display:grid; place-items:center; background:var(--sky); font-size:23px; margin-bottom:12px; }
+    .service h3 { margin:0 0 5px; color:var(--navy); font-size:17px; }
+    .service p { margin:0; font-size:14px; color:var(--muted); }
+    .about { background:white; }
+    .about-grid { display:grid; grid-template-columns:.85fr 1.15fr; gap:38px; align-items:center; }
+    .dentist-photo { background:var(--sky); min-height:300px; border-radius:28px; overflow:hidden; display:grid; place-items:center; }
+    .dentist-photo img { width:100%; height:100%; min-height:300px; object-fit:cover; }
+    .about p { color:var(--muted); }
+    .notice { background:#fff8e8; border:1px solid #f0dfb3; border-radius:12px; padding:12px 15px; color:#6f581b; font-size:13px; }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+    .contact-card { background:white; border:1px solid var(--line); border-radius:22px; padding:26px; }
+    .contact-card h3 { margin-top:0; color:var(--navy); }
+    .contact-card p { margin:8px 0; }
+    .hours { border-collapse:collapse; width:100%; }
+    .hours td { padding:10px 0; border-bottom:1px solid var(--line); }
+    .hours td:last-child { text-align:right; font-weight:700; }
+    footer { background:var(--navy); color:#eaf5ff; padding:28px 0; font-size:14px; }
+    footer .foot { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+    .small { font-size:12px; color:var(--muted); }
+    @media(max-width:800px) { nav { display:none; } .hero-grid,.about-grid,.contact-grid { grid-template-columns:1fr; } .hero { padding-top:38px; } .hero-art { min-height:230px; } .services { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:440px) { .services { grid-template-columns:1fr; } .actions .btn { width:100%; } section { padding:46px 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home"><span class="logo">✚</span><span>คลินิกหมอมณทันตกรรม<small>Dr.Mon Dental Clinic</small></span></a>
+      <nav aria-label="เมนูหลัก"><a href="#services">บริการ</a><a href="#dentist">ทันตแพทย์</a><a href="#contact">ติดต่อเรา</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">ดูแลรอยยิ้มของคุณ ด้วยความใส่ใจ</div>
+          <h1>คลินิกหมอมณทันตกรรม</h1>
+          <p class="lead">Dr.Mon Dental Clinic — คลินิกทันตกรรมในอำเภอละงู จังหวัดสตูล พร้อมดูแลสุขภาพช่องปากของคุณและครอบครัว</p>
+          <div class="actions">
+            <a class="btn" href="tel:0862923253">โทรนัดหมาย 086 292 3253</a>
+            <a class="btn secondary" href="https://maps.app.goo.gl/V4SDiwi4Uqn5SvSK8?g_st=ic" target="_blank" rel="noopener">นำทางมาคลินิก ↗</a>
+          </div>
+          <p class="small">กรุณาติดต่อคลินิกเพื่อสอบถามคิวและรายละเอียดค่ารักษา</p>
+        </div>
+        <div>
+          <div class="hero-art">
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=85" alt="ภาพประกอบคลินิกทันตกรรม">
+          </div>
+          <div class="photo-note">ภาพประกอบตัวอย่าง — ควรเปลี่ยนเป็นภาพคลินิกจริงก่อนเผยแพร่</div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">OUR SERVICES</div><h2>บริการทันตกรรม</h2><p>เลือกดูแลสุขภาพฟันตามความต้องการ โดยทันตแพทย์จะประเมินและแนะนำการรักษาที่เหมาะสม</p></div>
+        <div class="services">
+          <article class="service"><div class="ico">🪥</div><h3>ตรวจสุขภาพฟัน</h3><p>ตรวจประเมินสุขภาพช่องปากและวางแผนดูแลฟัน</p></article>
+          <article class="service"><div class="ico">✨</div><h3>ขูดหินปูน</h3><p>ดูแลคราบหินปูนและสุขภาพเหงือก</p></article>
+          <article class="service"><div class="ico">🦷</div><h3>อุดฟัน</h3><p>ดูแลฟันผุและซ่อมแซมเนื้อฟันตามความเหมาะสม</p></article>
+          <article class="service"><div class="ico">🩺</div><h3>ถอนฟัน / ผ่าฟันคุด</h3><p>ตรวจประเมินและวางแผนการรักษา</p></article>
+          <article class="service"><div class="ico">🌱</div><h3>รักษารากฟัน</h3><p>ประเมินทางเลือกเพื่อเก็บรักษาฟัน</p></article>
+          <article class="service"><div class="ico">😁</div><h3>จัดฟัน</h3><p>ปรึกษาแนวทางจัดเรียงฟันให้เหมาะกับแต่ละบุคคล</p></article>
+          <article class="service"><div class="ico">👧</div><h3>ทันตกรรมเด็ก</h3><p>ดูแลสุขภาพฟันสำหรับเด็กและครอบครัว</p></article>
+          <article class="service"><div class="ico">💎</div><h3>บริการอื่น ๆ</h3><p>รากฟันเทียม ฟอกสีฟัน ฟันปลอม และวีเนียร์</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="dentist">
+      <div class="wrap about-grid">
+        <div class="dentist-photo">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=85" alt="ภาพประกอบบุคลากรทางการแพทย์">
+        </div>
+        <div><div class="eyebrow">YOUR DENTIST</div><h2>ทันตแพทย์ประจำคลินิก</h2><h3>ทพญ.มณทิรา วารีรัตน์</h3><p>สำเร็จการศึกษาจากมหาวิทยาลัยสงขลานครินทร์</p><p>มุ่งเน้นการให้ข้อมูลและคำแนะนำ เพื่อให้ผู้รับบริการเข้าใจทางเลือกในการดูแลสุขภาพช่องปากของตนเอง</p><div class="notice">ภาพที่แสดงเป็นภาพประกอบชั่วคราว กรุณาเปลี่ยนเป็นรูปทันตแพทย์จริงที่ได้รับอนุญาตก่อนเผยแพร่</div></div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">CONTACT</div><h2>ติดต่อและเวลาทำการ</h2><p>โทรสอบถามหรือตรวจสอบเส้นทางก่อนเข้ารับบริการ</p></div>
+        <div class="contact-grid">
+          <div class="contact-card"><h3>ข้อมูลคลินิก</h3><p><strong>คลินิกหมอมณทันตกรรม</strong><br>1003 หมู่ 4 ตำบลกำแพง<br>อำเภอละงู จังหวัดสตูล 91110</p><p>โทรศัพท์: <a href="tel:0862923253">086 292 3253</a></p><div class="actions"><a class="btn" href="https://maps.app.goo.gl/V4SDiwi4Uqn5SvSK8?g_st=ic" target="_blank" rel="noopener">เปิดแผนที่</a><a class="btn secondary" href="https://www.facebook.com/profile.php?id=100054286729801" target="_blank" rel="noopener">Facebook</a></div></div>
+          <div class="contact-card"><h3>เวลาทำการ</h3><table class="hours"><tr><td>จันทร์–ศุกร์</td><td>16:30–20:00 น.</td></tr><tr><td>วันเสาร์</td><td>09:00–16:00 น.</td></tr><tr><td>วันอาทิตย์</td><td>กรุณาโทรสอบถาม</td></tr></table><p class="small">เวลาอาจเปลี่ยนแปลงได้ แนะนำให้โทรยืนยันก่อนเดินทาง</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><span>© คลินิกหมอมณทันตกรรม · Dr.Mon Dental Clinic</span><span>อำเภอละงู จังหวัดสตูล</span></div></footer>
+</body>
+</html>
