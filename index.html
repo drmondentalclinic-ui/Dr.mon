@@ -7,10 +7,10 @@
   <meta name="theme-color" content="#1267a5">
   <title>คลินิกหมอมณทันตกรรม | Dr.Mon Dental Clinic</title>
   <style>
-    :root { --navy:#123b63; --blue:#1678b9; --sky:#e9f6ff; --ink:#18344b; --muted:#60778b; --white:#fff; --line:#d8e8f2; }
+    :root { --navy:#514477; --blue:#7b9fe8; --sky:#eaf3ff; --pink:#f8dff0; --purple:#eee5ff; --ink:#443b5b; --muted:#786f8e; --white:#fff; --line:#e7dff3; --accent-pink:#e8a8d0; --accent-purple:#a99be8; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
-    body { margin:0; font-family:Tahoma,"Noto Sans Thai",Arial,sans-serif; color:var(--ink); background:#f7fbfe; line-height:1.7; }
+    body { margin:0; font-family:Tahoma,"Noto Sans Thai",Arial,sans-serif; color:var(--ink); background:#fcfaff; line-height:1.7; }
     a { color:inherit; }
     .wrap { width:min(1120px,92%); margin:auto; }
     header { background:rgba(255,255,255,.97); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:5; }
@@ -20,17 +20,17 @@
     .brand small { display:block; font-size:12px; color:var(--muted); font-weight:600; }
     nav { display:flex; gap:20px; flex-wrap:wrap; font-size:14px; }
     nav a { text-decoration:none; color:var(--navy); }
-    .hero { padding:58px 0 54px; background:linear-gradient(120deg,#eaf7ff 0%,#fff 70%); overflow:hidden; }
+    .hero { padding:58px 0 54px; background:linear-gradient(125deg,#eaf5ff 0%,#f9eafa 52%,#fff 100%); }
     .hero-grid { display:grid; grid-template-columns:1.08fr .92fr; gap:42px; align-items:center; }
-    .eyebrow { color:var(--blue); font-weight:800; letter-spacing:.03em; }
+    .eyebrow { color:#8a78cc; font-weight:800; letter-spacing:.03em; }
     h1 { color:var(--navy); font-size:clamp(34px,5vw,56px); line-height:1.2; margin:12px 0 16px; }
     h2 { color:var(--navy); font-size:clamp(26px,3vw,36px); line-height:1.3; margin:0 0 12px; }
     .lead { color:var(--muted); font-size:18px; max-width:570px; }
     .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:26px; }
-    .btn { display:inline-flex; justify-content:center; align-items:center; padding:12px 19px; border-radius:999px; text-decoration:none; font-weight:800; border:1px solid var(--blue); background:var(--blue); color:white; transition:transform .15s; }
+    .btn { display:inline-flex; justify-content:center; align-items:center; padding:12px 19px; border-radius:999px; text-decoration:none; font-weight:800; border:1px solid #819fe7; background:linear-gradient(120deg,#789fe8,#a69be8); color:white; transition:transform .15s; }
     .btn:hover { transform:translateY(-2px); }
-    .btn.secondary { color:var(--blue); background:white; }
-    .hero-art { min-height:340px; display:grid; place-items:center; border-radius:32px; background:#dff2ff; padding:18px; }
+    .btn.secondary { color:#7968b4; background:white; border-color:#d8b4e8; }
+    .hero-art { min-height:340px; display:grid; place-items:center; border-radius:32px; background:linear-gradient(135deg,#dceeff,#f8e2f2,#eee5ff); padding:18px; }
     .hero-art img { width:100%; max-height:400px; object-fit:cover; border-radius:22px; }
     .photo-note { font-size:12px; color:var(--muted); margin-top:10px; text-align:center; }
     section { padding:64px 0; }
@@ -41,7 +41,7 @@
     .service .ico { width:45px; height:45px; border-radius:14px; display:grid; place-items:center; background:var(--sky); font-size:23px; margin-bottom:12px; }
     .service h3 { margin:0 0 5px; color:var(--navy); font-size:17px; }
     .service p { margin:0; font-size:14px; color:var(--muted); }
-    .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }\n    .gallery figure { margin:0; background:white; border:1px solid var(--line); border-radius:18px; overflow:hidden; }\n    .gallery img { display:block; width:100%; height:220px; object-fit:cover; background:var(--sky); }\n    .gallery figcaption { padding:12px 14px; color:var(--navy); font-weight:700; }\n    .prices { width:100%; border-collapse:collapse; background:white; border-radius:16px; overflow:hidden; }\n    .prices th,.prices td { padding:14px 16px; text-align:left; border-bottom:1px solid var(--line); }\n    .prices th { background:var(--sky); color:var(--navy); }\n    .prices td:last-child { text-align:right; font-weight:700; white-space:nowrap; }\n    .about { background:white; }
+    .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }\n    .gallery figure { margin:0; background:white; border:1px solid var(--line); border-radius:18px; overflow:hidden; }\n    .gallery img { display:block; width:100%; height:220px; object-fit:cover; background:var(--sky); }\n    .gallery figcaption { padding:12px 14px; color:var(--navy); font-weight:700; }\n    .prices { width:100%; border-collapse:collapse; background:white; border-radius:16px; overflow:hidden; }\n    .prices th,.prices td { padding:14px 16px; text-align:left; border-bottom:1px solid var(--line); }\n    .prices th { background:var(--sky); color:var(--navy); }\n    .prices td:last-child { text-align:right; font-weight:700; white-space:nowrap; }\n    .about { background:linear-gradient(120deg,#fff,#f7effc); }
     .about-grid { display:grid; grid-template-columns:.85fr 1.15fr; gap:38px; align-items:center; }
     .dentist-photo { background:var(--sky); min-height:300px; border-radius:28px; overflow:hidden; display:grid; place-items:center; }
     .dentist-photo img { width:100%; height:100%; min-height:300px; object-fit:cover; }
@@ -54,7 +54,7 @@
     .hours { border-collapse:collapse; width:100%; }
     .hours td { padding:10px 0; border-bottom:1px solid var(--line); }
     .hours td:last-child { text-align:right; font-weight:700; }
-    footer { background:var(--navy); color:#eaf5ff; padding:28px 0; font-size:14px; }
+    footer { background:linear-gradient(110deg,#5a4c83,#7e8fd0,#c48bb8); color:#fff; padding:28px 0; font-size:14px; }
     footer .foot { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
     .small { font-size:12px; color:var(--muted); }
     @media(max-width:800px) { nav { display:none; } .hero-grid,.about-grid,.contact-grid { grid-template-columns:1fr; } .hero { padding-top:38px; } .hero-art { min-height:230px; } .services { grid-template-columns:repeat(2,1fr); } .gallery { grid-template-columns:repeat(2,1fr); } }
